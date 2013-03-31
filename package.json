@@ -1,15 +1,23 @@
 {
-  "name": "application-name",
+  "name": "english-word-board",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app",
+    "start": "forever start",
+    "stop": "forever stop",
     "test": "buster test"
   },
   "dependencies": {
+    "grunt": "*",
     "buster": "*",
     "express": "3.1.0",
-    "ejs": "*",
+    "jade": "*",
     "stylus": "*"
+  },
+  "devDependencies": {
+    "grunt-contrib": "~0.6.1",
+    "grunt-contrib-coffee": "~0.6.4",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-jshint": "~0.3.0"
   }
 }
